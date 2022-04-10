@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Secundaria Antonio Toro</title>
+    <link rel="icon" href="../images/LogoSecu2.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/responsive.css">
+  </head>
+  <body id="gridContactoArea">
+      <header>
+          <img class="banner" src="../images/banner pagina2.jpg" alt="banner">
+      </header>
+      <nav  id="menu">
+        <span class="botonMenu"><a class="linkMenu" href="../index.html">HOME</a></span>
+        <span class="botonMenu"><a class="linkMenu" href="institucional.html">¿Quienes somos?</a></span>
+        <span class="botonMenu"><a class="linkMenu" href="contacto.html">Contactanos</a></span>        
+        <span class="botonMenu"><a class="linkMenu" href="docentes.html">Docentes</a></span>
+        <span class="botonMenu"><a class="linkMenu" href="alumnos.html">Alumnos</a></span>
+      </nav>
+      <section class="iconoContacto">
+        <div class="contIconoContacto">
+          <img class="logoChat" src="../images/chat.png" alt="">
+        </div>
+      </section>
+      <section class="textoContacto">
+        <div class="parrafoContacto">
+          <p class="letrasContact">Podes realizarnos una consulta por este medio y nos pondremos en contacto a la brevedad. Recordá proporcionar los datos correctos. Tambien podes consultarnos por nuestras redes sociales que figuran al pie de la página.</p> 
+          <p>Equipo Directivo - ESCUELA SECUNDARIA ANTONIO TORO</p>
+        </div>
+      </section>
+      <section class="form">
+        <h2>ESCRIBINOS</h2><br>
+        <div class="formulario">
+          <form action="leer.php" method="post">          
+            <label class="itemForm" for="nombre">Nombre: </label><input type="text" name="nombre"><br><br>
+            <label class="itemForm" for="apellido">Apellido: </label><input type="text" name="apellido"><br><br>
+            <label class="itemForm" for="mail">Correo electrónico: </label><td><input type="text" name="mail"><br><br>
+            <label class="itemForm">Es padre o familiar de la escuela:</label>
+            <label  for="familiar">SI </label><input type="radio" name="familiar" value="SI">
+            <label  for="familiar">NO </label><input type="radio" name="familiar" value="NO"><br><br>
+            <label class="itemForm">Querés dirigirte a:</label>
+            <select  name="Areá">
+              <option selected> Elija de la lista</option>
+              <option value="direccion">Dirección</option>
+              <option value="preceptoria">Preceptoría</option>
+              <option value="docente">Docentes</option>
+              <option value="admin">Administración</option>
+              <option value="rl">Representante Legal</option>
+            </select> <br><br>
+            <label>Tu consulta o mensaje:</label><br>
+            <textarea name="mensaje" cols="50" rows="10">Escriba aquí tu mensaje</textarea> <br>
+            <input type="submit"  value="Enviar mensaje">
+            <input type="reset"   value="Borrar datos">
+          </form>
+        </div>
+      </section>
+      <footer>
+        <h3>- ESCUELA SECUNDARIA ANTONIO TORO -</h3>
+        <h3>Puerto Rico 424, Presidente Derqui (PILAR) - Buenos Aires -ARGENTINA</h3>
+        <h3>CONTACTO: </h3>
+        <h3>E-amil: colsecat@gmail.com - Tel: 0230-4485039/4486367</h3>
+        <h3>- Visitanos en nuestras redes sociales -</h3>
+        <div>
+            <a  href="https://www.facebook.com/toro.secundaria"><img class="imgFooter" src="../images/facebook.png" alt="logo facebook"></a>
+            <a href="https://www.instagram.com/secundariatoro/?hl=es-la"><img class="imgFooter" src="../images/instagram.png" alt="logo instagram"></a>    
+        </div>
+        <h3>&copy 2022 - Desarrollado por ALAN GOMEZ</h3>
+    </footer>    
+      
+  </body>
+</html>
