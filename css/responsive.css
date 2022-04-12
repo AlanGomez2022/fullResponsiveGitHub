@@ -40,14 +40,17 @@
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        background-color: #B42128;
-    
+        background-image:linear-gradient(#B42128 70%, white  ) ;
+        
     }
+
     #botones{
         grid-area: botones;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+  
+    
     #mapa{
         grid-area: mapa;
         text-align: center;
@@ -62,6 +65,7 @@
         display: flex;
         flex-flow: column;
         align-items: center;
+        background-image:linear-gradient(to top,#B42128 90%, white  ) ;
     }
     
     .banner{
@@ -86,6 +90,8 @@
         margin: 0;
         border: solid 2px ;
         cursor: pointer;
+        transition: 0.2s;
+        transform: scale(1.1);
     }
     .imgFooter{
         width: 30px;
@@ -106,6 +112,7 @@
         border: solid 5px blue;
         transition: 1s;
         opacity: 0.5;
+        transform: scale(1.05);
     }
     .mapaCole{
         width: 100%;
@@ -166,6 +173,20 @@
         width: 70%;
         height:100%;
         padding: 10px;
+        
+    }
+    .animacion{
+        animation-name: iconoSecu;
+        animation-duration: 5s;
+    }
+    @keyframes iconoSecu {
+        from{
+            transform: translateX(1000);
+        }
+
+        to{
+            transform:translateX(0) ;
+        }
     }
     p{
         width: 100%;
@@ -401,7 +422,7 @@
         font-size: 10px;
         justify-content: center;
         align-items: center;
-        background-color: #B42128;
+        background-image:linear-gradient(#B42128 70%, white  ) ;
     
     }
     #botones{
@@ -416,7 +437,7 @@
     footer{
         grid-area: pie;
         text-align: center;
-        background-color: #B42128;
+        background-image:linear-gradient(to top,#B42128 90%, white  ) ;
         color:bisque;
         padding: 5px;
         font-size:x-small;
@@ -434,6 +455,7 @@
         margin-right:15px;
         margin-left:15px;
     }
+
     img{
         width: 100%;
         height: 100%;
@@ -446,6 +468,8 @@
         margin: 0;
         border: solid 2px ;
         cursor: pointer;
+        transition: 0.2s;
+        transform: scale(1.1);
     }
     .imgFooter{
         width: 30px;
@@ -466,6 +490,7 @@
         border: solid 5px blue;
         transition: 1s;
         opacity: 0.5;
+        transform: scale(1.05);
     }
     .mapaCole{
         width: 100%;
